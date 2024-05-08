@@ -39,10 +39,11 @@ public:
     void doExam() {
         string examName;
         cout << "Enter exam name: ";
-        cin >> examName;
+        cin >> examName ;
 
-        ifstream examFile(examName);
-        ofstream answerFile("./students/" + id + "/answers/" + examName);
+
+        ifstream examFile(examName+".txt");
+        ofstream answerFile("./students/" + id + "/answers/" + examName+".txt" );
 
         string line;
         while (getline(examFile, line)) {
@@ -59,7 +60,7 @@ public:
         cout << "Enter exam name: ";
         cin >> examName;
 
-        ifstream examFile("./students/" + id + "/examans/Resp" + examName);
+        ifstream examFile("./students/" + id + "/examans/Resp" + examName + ".txt");
         string line;
         int count = 1;
         while (getline(examFile, line)) {
@@ -73,7 +74,7 @@ public:
         cout << "Enter exam name: ";
         cin >> examName;
 
-        ifstream commentsFile("./students/" + id + "/comments/" + examName);
+        ifstream commentsFile("./students/" + id + "/comments/" + examName + ".txt");
         string line;
         cout << "Teacher's comments:" << endl;
         while (getline(commentsFile, line)) {
@@ -86,7 +87,7 @@ public:
         cout << "Enter exam name: ";
         cin >> examName;
 
-        ifstream gradesFile("./students/" + id + "/Grades/" + examName);
+        ifstream gradesFile("./students/" + id + "/Grades/" + examName + ".txt");
         string line;
         cout << "Your grades:" << endl;
         while (getline(gradesFile, line)) {
