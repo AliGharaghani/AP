@@ -316,7 +316,15 @@ int main ( ) {
                 } ;
 
 
-                if ( action == '4') { } ;
+                if ( action == '4') {
+                    string stid ;
+                    cout << "enter the stid :) " ;
+                    cin >> stid ;
+                    teacher.add_grade(stid ) ;
+
+
+
+                } ;
 
                 if ( action == '0') {
                     return  0 ;
