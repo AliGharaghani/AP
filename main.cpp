@@ -76,7 +76,7 @@ public:
 
         ifstream commentsFile("./students/" + id + "/comments/" + examName + ".txt");
         string line;
-        cout << "Teacher's comments:" << endl;
+        cout << "Teacher's comments:  " << endl;
         while (getline(commentsFile, line)) {
             cout << line << endl;
         }
@@ -89,7 +89,7 @@ public:
 
         ifstream gradesFile("./students/" + id + "/Grades/" + examName + ".txt");
         string line;
-        cout << "Your grades:" << endl;
+        cout << "Your grades:   " << endl;
         while (getline(gradesFile, line)) {
             cout << line << endl;
         }
@@ -276,7 +276,7 @@ int main ( ) {
         string pass;
         cout<< "enter the usernmae :) " ;
         cin >> username ;
-        cout << "enter the password" ;
+        cout << "enter the password : " ;
         cin >> pass ;
 
         Teacher teacher ( username , pass ) ;
@@ -318,14 +318,14 @@ int main ( ) {
 //                    // how to define the the vector or array in the C++
 //
 //
-                    cout << "enter the exam name " ;
+                    cout << "enter the exam name  : " ;
                     cin >> examname ;
 //
-                    cout <<  " enter the qeuestions number ;) " ;
+                    cout <<  " enter the qeuestions number :  " ;
                     cin  >> numq  ;
                     std::vector<string> exam_st_list;
-                    cout << "enter the total number of the students in the exam : ) " ;
-                    cout << "enter the total number of the students in the exam : ) " ;
+                    cout << "enter the total number of the students in the exam :  " ;
+                    cout << "enter the total number of the students in the exam :  " ;
                     cin  >> numofStudents ;
                     while (numofStudents != 0) {
                         string stid;
@@ -347,7 +347,7 @@ int main ( ) {
                 if ( action == '3') {
 //                add the comment to the exam :)
                     string studientid ;
-                    cout <<"enter the std id " ;
+                    cout <<"enter the std id :  " ;
                     cin >> studientid ;
                     teacher.add_comment(studientid) ;
 
@@ -356,7 +356,7 @@ int main ( ) {
 
                 if ( action == '4') {
                     string stid ;
-                    cout << "enter the stid :) " ;
+                    cout << "enter the stid  :  " ;
                     cin >> stid ;
                     cin.get() ;
                     teacher.add_grade(stid) ;
@@ -384,9 +384,9 @@ int main ( ) {
 
         string username ;
         string pass;
-        cout<< "enter the usernmae :) " ;
+        cout<< "enter the usernmae : " ;
         cin >> username ;
-        cout << "enter the password" ;
+        cout << "enter the password : " ;
         cin >> pass ;
 
         Student student ( username , pass ) ;
@@ -404,8 +404,8 @@ int main ( ) {
                 cout <<  " 1 . show Examples  \n" ;
                 cout <<  " 2 . do exams \n" ;
                 cout <<  " 3 . see comments  \n" ;
-                cout <<  " 4 . see exam key   :) \n" ;
-                cout <<  " 5 . see Grade of exam :) \n" ;
+                cout <<  " 4 . see exam key   \n" ;
+                cout <<  " 5 . see Grade of exam  \n" ;
                 cout <<  " 0 . Exit  \n" ;
                 cin >> action ;
 
