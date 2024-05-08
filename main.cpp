@@ -121,7 +121,7 @@ public:
                 string pass = line.substr(pos + 1);
 
                 if (username == user && pass == password) {
-                    cout << "Login successful." << endl;
+                    cout << "Login successful."<< endl  ;
                     LoginStatus = true;
                     return ;
                 }
@@ -139,11 +139,13 @@ public:
 
         while (numQ > 0) {
             string question;
+            string response;
+
             cout << "Enter question number title " << counter << ": ";
             getline(cin, question);
-            examFile << question << endl;
+            examFile << question << endl  ;
 
-            string response;
+
             cout << "Enter response for question  number " << counter << ": ";
             getline(cin, response);
             respFile << response << endl;
@@ -283,10 +285,12 @@ int main ( ) {
                 cout << "select you command fromn command list :) \n " ;
                 cout <<  " 1 . add Student \n " ;
                 cout <<  " 2 . Creat Exam \n" ;
+                cout <<  " 2 . Creat Exam \n" ;
                 cout <<  " 3  . Add comment to the student Exam responses \n  " ;
                 cout <<  " 4  . Check Grades for students and do grading :) \n " ;
                 cout <<  " 0 .    Exit  \n " ;
                 cin >> action ;
+
 
 
 
@@ -319,6 +323,7 @@ int main ( ) {
                         string stid;
                         cout << "Enter the student ID: ";
                         cin >> stid;
+                        cin.get () ;
                         // Add function to check the existing student ID
 
                         exam_st_list.push_back(stid);
