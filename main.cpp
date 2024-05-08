@@ -302,7 +302,32 @@ int main ( ) {
 
                 if ( action == '2') {
                     string examname ;
-                    int numofStudents ;
+                    int  numq ;
+                    int  numofStudents ;
+//                    // how to define the the vector or array in the C++
+//
+//
+                    cout << "enter the exam name " ;
+                    cin >> examname ;
+//
+                    cout <<  " enter the qeuestions number ;) " ;
+                    cin  >> numq  ;
+                    std::vector<string> exam_st_list;
+                    cout << "enter the total number of the students in the exam : ) " ;
+                    cin  >> numofStudents ;
+                    while (numofStudents != 0) {
+                        string stid;
+                        cout << "Enter the student ID: ";
+                        cin >> stid;
+                        // Add function to check the existing student ID
+
+                        exam_st_list.push_back(stid);
+                        numofStudents -- ;
+                    }
+
+                    teacher.addExam(examname , numq , exam_st_list ) ;
+
+
 
 
                 }
@@ -330,10 +355,6 @@ int main ( ) {
                     return  0 ;
 
                 }
-
-
-
-
 
 
 
