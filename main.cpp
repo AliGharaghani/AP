@@ -144,7 +144,7 @@ public:
             examFile << question << endl;
 
             string response;
-            cout << "Enter response for question number " << counter << ": ";
+            cout << "Enter response for question  number " << counter << ": ";
             getline(cin, response);
             respFile << response << endl;
 
