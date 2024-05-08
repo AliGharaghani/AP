@@ -364,7 +364,93 @@ int main ( ) {
         }
 
         return 0;
-    }  }
+    }
+    if ( userMode =="S" ) {
+
+
+        string username ;
+        string pass;
+        cout<< "enter the usernmae :) " ;
+        cin >> username ;
+        cout << "enter the password" ;
+        cin >> pass ;
+
+        Student student ( username , pass ) ;
+        bool loginstat = student.studentAuthentication() ;
+
+        if ( loginstat) {
+
+
+
+            int counter = 1 ;
+
+            while ( counter ) {
+                char action ;
+                cout << "select you command fromn command list :) \n " ;
+                cout <<  " 1 . show Examples  \n " ;
+                cout <<  " 2 . do example \n" ;
+                cout <<  " 3  .see comments  \n  " ;
+                cout <<  " 4  . see exam key   :) \n " ;
+                cout <<  " 5  . see Grade of exam :) \n " ;
+                cout <<  " 0 .    Exit  \n " ;
+                cin >> action ;
+
+
+
+                if ( action == '1' ) {
+                    student.showExam() ;
+
+                }
+
+                if ( action == '2') {
+                    student.doExam() ;
+
+
+
+
+
+                }
+                if ( action == '3') {
+                    student.seeComments() ;
+//
+
+                } ;
+
+
+                if ( action == '4') {
+                    student.seeResults() ;
+
+
+
+                } ;
+
+                if ( action == '5'){
+                    student.seeGrades() ;
+                }
+
+                if ( action == '0') {
+                    return  0 ;
+
+                }
+
+
+
+            }
+
+
+        }
+
+
+
+
+
+
+    }
+
+
+
+}
+
 
 
 //
