@@ -289,13 +289,12 @@ int main ( ) {
 
             while ( counter ) {
                 char action ;
-                cout << "select you command fromn command list :) \n " ;
-                cout <<  " 1 . add Student \n " ;
+                cout << "select you command fromn command list :) \n" ;
+                cout <<  " 1 . add Student \n" ;
                 cout <<  " 2 . Creat Exam \n" ;
-                cout <<  " 2 . Creat Exam \n" ;
-                cout <<  " 3  . Add comment to the student Exam responses \n  " ;
-                cout <<  " 4  . Check Grades for students and do grading :) \n " ;
-                cout <<  " 0 .    Exit  \n " ;
+                cout <<  " 3 . Add comment to the student Exam responses \n" ;
+                cout <<  " 4 . Check Grades for students and do grading :) \n" ;
+                cout <<  " 0 .    Exit  \n" ;
                 cin >> action ;
 
 
@@ -399,13 +398,13 @@ int main ( ) {
 
             while ( counter ) {
                 char action ;
-                cout << "select you command fromn command list :) \n " ;
-                cout <<  " 1 . show Examples  \n " ;
+                cout << "select you command fromn command list :) \n" ;
+                cout <<  " 1 . show Examples  \n" ;
                 cout <<  " 2 . do example \n" ;
-                cout <<  " 3  .see comments  \n  " ;
-                cout <<  " 4  . see exam key   :) \n " ;
-                cout <<  " 5  . see Grade of exam :) \n " ;
-                cout <<  " 0 .    Exit  \n " ;
+                cout <<  " 3 . see comments  \n" ;
+                cout <<  " 4 . see exam key   :) \n" ;
+                cout <<  " 5 . see Grade of exam :) \n" ;
+                cout <<  " 0 . Exit  \n" ;
                 cin >> action ;
 
 
