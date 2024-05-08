@@ -195,15 +195,22 @@ public:
         string exam;
         cout << "Enter exam name: ";
         cin >> exam;
+        cin.get () ;
+
 
         ifstream examFile("./students/" + id + "/answers/" + exam);
         ofstream commentFile("./students/" + id + "/comments/" + exam);
 
         if (examFile.is_open() && commentFile.is_open()) {
             string question;
+            int counterr =0 ;
             while (getline(examFile, question)) {
                 string comment;
                 cout << question << ": ";
+//                if ( counterr % 2  == 1 ){
+//                    cout << "tthis is alio : ) " ;
+//                 }
+//                counterr += 1;
                 getline(cin, comment);
                 commentFile << question << " " << comment << endl;
             }
@@ -317,6 +324,7 @@ int main ( ) {
                     cout <<  " enter the qeuestions number ;) " ;
                     cin  >> numq  ;
                     std::vector<string> exam_st_list;
+                    cout << "enter the total number of the students in the exam : ) " ;
                     cout << "enter the total number of the students in the exam : ) " ;
                     cin  >> numofStudents ;
                     while (numofStudents != 0) {
