@@ -232,8 +232,8 @@ public:
         cout << "Enter exam name: ";
         getline(cin, examName);
 
-        string answersPath = "./students/" + id + "/answers/" + examName;
-        string gradesPath = "./students/" + id + "/Grades/" + examName;
+        string answersPath = "./students/" + id + "/answers/" + examName +".txt";
+        string gradesPath = "./students/" + id + "/Grades/" + examName + ".txt";
 
         ifstream answersFile(answersPath);
         ofstream gradesFile(gradesPath);
@@ -358,7 +358,8 @@ int main ( ) {
                     string stid ;
                     cout << "enter the stid :) " ;
                     cin >> stid ;
-                    teacher.add_grade(stid ) ;
+                    cin.get() ;
+                    teacher.add_grade(stid) ;
 
 
 
@@ -401,7 +402,7 @@ int main ( ) {
                 char action ;
                 cout << "select you command fromn command list :) \n" ;
                 cout <<  " 1 . show Examples  \n" ;
-                cout <<  " 2 . do example \n" ;
+                cout <<  " 2 . do exams \n" ;
                 cout <<  " 3 . see comments  \n" ;
                 cout <<  " 4 . see exam key   :) \n" ;
                 cout <<  " 5 . see Grade of exam :) \n" ;
